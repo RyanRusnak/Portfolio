@@ -1,0 +1,6 @@
+<div class=row ng-repeat="project in projects track by $index" ng-if="$index%3==0">
+  <div class="col-sm-4 cell nopadding" ng-repeat="i in [$index,$index+1,$index+2]" ng-if="projects[i]!=null">
+    <a class="navi"></a>
+    <project class="project" data="projects[i]"></project>
+ </div>
+</div>

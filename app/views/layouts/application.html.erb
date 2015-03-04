@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp" ng-controller="MainCtrl">
+<head>
+  <title>RyanRusnak</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container-fluid">
+    <% if flash[:notice] %>
+      <div class="alert alert-info" role="alert"><%= notice %></div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="alert alert-warning" role="alert"><%= alert %></div>
+    <% end %>
+    <span class="glyphicon glyphicon-menu-hamburger nav-menu" aria-hidden="true" ng-click="flyout='show-flyout'"></span>
+    <%= render partial: 'layouts/flyout' %>
+    <%= yield %>
+  </div>
+</body>
+</html>
