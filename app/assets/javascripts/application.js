@@ -17,3 +17,10 @@
 //= require_tree .
 //= require_tree ./directives
 //= require fresco
+//= require d3.v2
+//= require d3pie.min
+//= require nv.d3
+//= require angularjs-nvd3-directives.min
+//= require angular-nvd3.min
+//= require topojson
+//= require datamaps.usa.min

@@ -1,4 +1,4 @@
-angular.module('portfolioApp',[])
+angular.module('portfolioApp',['nvd3','nvd3ChartDirectives'])
 .config(function() {
         
 })

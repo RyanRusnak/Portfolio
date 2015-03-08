@@ -61,6 +61,16 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def playmates
+    text = IO.read("#{Rails.root}/config/playmates.json")
+    playmates = JSON.parse(text)
+    states = Project.states(playmates)
+    respond_to do |format|
+      format.html { :playmates }
+      format.json { render json: { playmates: playmates, states: states } }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_project

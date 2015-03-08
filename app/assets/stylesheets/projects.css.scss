@@ -111,3 +111,39 @@
   letter-spacing: 3px;
   margin-top: 10%;
 }
+
+///// ==== data viz
+
+#usa-map{
+  top: -100px;
+  left: 0px;
+  position: absolute; 
+  width: 800px;
+  height: 600px;
+}
+#hair-color{
+  top: 400px;
+  left: 20px;
+  position: absolute; 
+  // width: 100px;
+  // height: 100px;
+}
+#list{
+  top: 0px;
+  right: 0px;
+  position: absolute; 
+  width: 400px;
+  height: 900px;
+  overflow: scroll;
+}
+#measurements{
+  top: 400px;
+  left: 300px;
+  width:550px;
+  height: 500px;
+  position: absolute; 
+}
+.playmate{
+  background-color:rgba(0,0,0,.05);
+  // color: #ffffff;
+}
