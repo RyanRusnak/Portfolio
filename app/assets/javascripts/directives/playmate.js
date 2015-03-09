@@ -11,7 +11,6 @@ angular.module('portfolioApp').directive('playmate', function($animate) {
       console.log(scope.tooltip);
 
       scope.$watch(function() {return element.attr('class'); }, function(newValue){
-        console.log(element.className);
                 if (element.hasClass(scope.data.name)) {
                   element.css({
                       'background-color': '#A6A4A4'

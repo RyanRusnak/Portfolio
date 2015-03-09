@@ -5,6 +5,7 @@ angular.module('portfolioApp').controller('PlayboyCtrl', function($scope, $http,
   $scope.playmates = [];
   $scope.states = [];
   $scope.sorted = [];
+  $scope.state = 'CA';
   var states = [];
 
 

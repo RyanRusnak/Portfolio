@@ -5,11 +5,11 @@
       <div class="col-md-8">
         <div id="usa-map"></div>
       </div>
-      <div class="col-md-4" id="list" >
-        <ul class="list-unstyled" ng-repeat="playmate in playmates | filter:{'birthplace': {'state' : state}}:true | orderBy: '-likes'">
+      <ul class="col-md-4" id="list" >
+        <li class="list-unstyled" ng-repeat="playmate in playmates | filter:{'birthplace': {'state' : state}}:true | orderBy: '-likes'">
           <playmate ng-class="tooltip" data="playmate" tooltip="tooltip"></playmate>
-        </ul>
-      </div>
+        </li>
+      </ul>
     </div>
     <div class="row">
       <div class="col-md-12">

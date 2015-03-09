@@ -1,7 +1,7 @@
 <li class="playmate">
   <div class="row">
     <div class="col-md-4">
-      <img ng-src="{{data.image}}" height="150">
+      <img ng-src="{{data.image}}" height="155">
     </div>
     <div class="col-md-8">
       <div class="row">
@@ -11,7 +11,12 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <strong>Born:</strong> {{data.birthplace.formatted}}
+          <strong>Born:</strong> {{data.birthplace.formatted}} 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <strong>Year:</strong> {{data.birthday.birthdayFormatted}}
         </div>
       </div>
       <div class="row">
